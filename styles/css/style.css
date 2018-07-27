@@ -1,0 +1,14 @@
+body{
+    background-image: url('../css/style/');
+    background: blue;
+    color: whitesmoke;
+    
+}
+header{
+    text-align: center;
+    font-size: 72px;
+    font-family: 'Tangerine', cursive;
+}
+img{
+    width: 30%;
+}
