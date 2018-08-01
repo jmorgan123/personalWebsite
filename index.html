@@ -22,8 +22,18 @@
   background-color: red;
 }
 </style>
+<scale>
+  Scale: <input id="scale" max="4" min="0.1" step="0.01" type="range" value="1" />
+  Rotate: <input id="rotate" max="180" min="-180" step="1" type="range" value="0" />
+</scale>
+<input id="fileInput" type="file" />
 <body>
-        
+  <canvas id ="memecanvas">
+    Sorry, canvas not supported
+    </canvas>
+<img style="display: none;" src="/files/my-face-when-ncf2i.jpg" alt="" />
+<input id="custom-text" type="text" value="enter some text" />
+<a id="img-download" download="mobiforge-canvas.png"></a>Download image
         <div id ="container">
                 <div id ="animate"></div>
         </div>
@@ -33,8 +43,7 @@
      <p>
             <button onclick="myMove()">Click Me</button>
             </p> 
-            
-   <script>
+      <script>
             function myFunction() {
               document.getElementById("img").innerHTML = "black  live matter";
             }
@@ -55,6 +64,7 @@
 }
             </script> 
     <div class="logo">
+           
         <header>
             <h1>john live</h1>
             <p>i am a youtuber call project ball live what i doing talk about what i do in my life  </p>
@@ -71,13 +81,13 @@
         <div class="youtube">
             <div class="youtube">
              
-                <h2>john youtube</h2>
+                <h2>My youtube video  </h2>
               <h1> <p>my life when i was good at the did so i try a video to show my talent </p></h1>
-              <a href="https://youtu.be/YBshTSAb7OA">  hello  </a>
+              <a href="https://youtu.be/YBshTSAb7OA">  click video </a>
               <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjbw93r8r_cAhWGdd8KHRYCDE4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.merchantmaverick.com%2F3-best-one-page-website-builders%2F&psig=AOvVaw1g_6aJ6nstU-gxyJZkoFpM&ust=1532802064706112" alt="">
             </div>
             <div class="grandma">
-                <h2>my mom or her mom</h2>
+                <h2>this picture my grandma</h2>
                 <h3><p>the Image is so improtant to me in my mom life i never know her</p></h3>
                <h1><p>my famliy been thought lot when my grandma die her last word is sorry i would not going to see your son </p></h1>
                 <a href="https://lh3.googleusercontent.com/OEr6RIPvhcw6zlr6JSIB6rGp3wSk5MfmTOzIuaHfE4hfZd9qtc8WlueDHHpwAops2m7pgG3WK1g3ytV7OIdsVlPqs8SrkBrziZXCOVNZCdLE9VJLOyaU80dmDLuP4j32zPJepifLrHAfMMHwNXPqdVl_Fpg34hQpj5l5DpJOuDgii1sTakSKzETSA_RvN5uMc58etxYvUGCejuYjysGGgXDhfPhyLrPj1YfVVYo5zlBoAlD0p98vhRjzwAfbirNlsAf6Veg1oV1BxrjLo0R9fFwVHTcFgERXJXldMNVJ1uI6YPvoCi54_0nUX6nFDB755e2EIl_CMf8HDY_c8ySIIvh_nLdnhNgLiMGqfkuU35sjgIo3dbHqSOirqNZSpj-aFB1QAOM8Ou_yUBPygsmoOj-kxfOHBSl46GT5x9Aqr8XeIZAs7Y_OSUW47n0LagC2LjyZXcBZDCIbIJCfyWc3y_MaBmpTjUoDG1IIERRJfv5AiPeDfQPfU3wvZRf1xSpexxmlV0YPlbsK47D6LVCaiyJcB91VTlUebgCorwKfMLeVw6_8pphYoiyUUR9_Sf1o0FQVGxxRiubDTbjcQG3qljzZ6VuA9KG3shwbnzk=w908-h1614-no">  hello  </a>
@@ -85,6 +95,7 @@
             <div class="dream goal">
                 <h2>my dream goal</h2>
                <h1> <p>my goal is to go to NBA if not able to do i would join army or work at compture science</p></h1>
+               <h1><p>in the picture is  a famous former gay NBA player his name is Jason Collins  </p></h1>
                 <a href="https://lh3.googleusercontent.com/Xwc1gXs2eqt7NoXKZM4bw-2g4KCX3xNDjA4jClV-U6RIrtaGMUvYGFe-zCTG2wDnrLDi7hefAAJnizPDcrYrq8kWv3Zv3smJHxmvC61jhAMj1biTJd2r-zW9kvGrKP-Ddm6NiQbVm0FLdOFfW-p9gbsKnKdlPSmi_y6lwnbOgMFasYN4DyO81ANQIhCVwHKq7lDc70kUSmCQxxmjNFHdADdMkEr7z6-dUZk2-FKRzKV3S_HeUylamhorJg4Hm9RDxIlkdR263PtqqMoHeRv2FuO6kr0fZGLj3I79zCmbHFsxiGWYQ2D_V_yc-uj1I9OuD1Un9B4tcJUi26rzNWSnqOQiMw_8lTsfjNZ5zZH7dJweGd2IAn4d_pZKR80YBLkTtLoDzhnW5oRzqan9E-ieq9Br4l7IKGOXN1fazqdOEWHg1gDEnMm5ArF62V0E975D-gi25-y_yYRA-wrMmfJ6XFNSh4GhHLxTHlMYZFONN30KR8BMp6bfMTwCzpy4nIbTdUc51h3AgXG0A4jIEZVbyyA_1es2WLyWrR43OPzkxv02gS0yofjS_SSDgJtiE0f5uu2HOWAeOcKEfN-l7uk2VcHApnRhWHOGQqVA5g0=w908-h1614-no">  hello  </a>
                 <img src="https://lh3.googleusercontent.com/Xwc1gXs2eqt7NoXKZM4bw-2g4KCX3xNDjA4jClV-U6RIrtaGMUvYGFe-zCTG2wDnrLDi7hefAAJnizPDcrYrq8kWv3Zv3smJHxmvC61jhAMj1biTJd2r-zW9kvGrKP-Ddm6NiQbVm0FLdOFfW-p9gbsKnKdlPSmi_y6lwnbOgMFasYN4DyO81ANQIhCVwHKq7lDc70kUSmCQxxmjNFHdADdMkEr7z6-dUZk2-FKRzKV3S_HeUylamhorJg4Hm9RDxIlkdR263PtqqMoHeRv2FuO6kr0fZGLj3I79zCmbHFsxiGWYQ2D_V_yc-uj1I9OuD1Un9B4tcJUi26rzNWSnqOQiMw_8lTsfjNZ5zZH7dJweGd2IAn4d_pZKR80YBLkTtLoDzhnW5oRzqan9E-ieq9Br4l7IKGOXN1fazqdOEWHg1gDEnMm5ArF62V0E975D-gi25-y_yYRA-wrMmfJ6XFNSh4GhHLxTHlMYZFONN30KR8BMp6bfMTwCzpy4nIbTdUc51h3AgXG0A4jIEZVbyyA_1es2WLyWrR43OPzkxv02gS0yofjS_SSDgJtiE0f5uu2HOWAeOcKEfN-l7uk2VcHApnRhWHOGQqVA5g0=w908-h1614-no" alt="">
                 <div> 
@@ -94,11 +105,15 @@
                 <a href="https://www.instagram.com/johnmorgan9274">
                 <img src="http://www.transparentpng.com/download/logo-instagram/JFyofc-logo-instagram-background-png.png" alt="Instagram">
                 </a>
-                <div id = 'linkedin'>
-                <a href="https://www.linkedin.com/in/john-morgan-582818162"></a>
-                <img src="https://www.linkedin.com/feed/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJMDiV0xJTFeYwmp1Ui5Hxw%3D%3D"alt="linkedin">
+                <div id = 'email'>
+                <a href="https://plus.google.com/u/0/me?tab=mX"></a>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/1014px-New_Logo_Gmail.svg.png"alt="email">
                </a>
-                <h3>contact here</h3> 
+               <div id = 'linkedin'
+               <a href="https://www.linkedin.com/in/john-morgan-582818162"></a>
+               <img src="data:image/png;base64,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"alt="linkedin">
+              </a>
+               <h3>contact here</h3> 
             
             </div>    
 
