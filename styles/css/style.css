@@ -28,3 +28,15 @@ youtube{
 h3{
     font-size: 35px; 
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: solid green;
+    padding: 20px;
+
+  }
+
+ .box{
+     width: 7%;
+     height: 7%
+ } 
